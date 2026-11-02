@@ -62,6 +62,8 @@ public abstract class Pieza {
     
     public abstract int getAlcance();
     
+    public abstract ResultadoCombate recibirAtaque(PiezaMovil atacante);
+    
     @Override
     public String toString(){
         return nombre + " (rango " +rango+ ", " + bando.getNombre() + ")";

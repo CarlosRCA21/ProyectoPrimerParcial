@@ -21,6 +21,7 @@ public class PiezaMovil extends Pieza {
         return false;
     }
     
+    @Override
     public ResultadoCombate recibirAtaque(PiezaMovil atacante){
         if(atacante.ganaPorHabilidadContra(this)){
             return ResultadoCombate.GANA_ATACANTE;
