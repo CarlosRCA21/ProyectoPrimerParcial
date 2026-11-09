@@ -5,6 +5,15 @@
         <group>
             <file>file:/C:/Users/claud/OneDrive/Documentos/NetBeansProjects/MarvelSttratego/src/marvelsttratego/vista/VentanaPrincipal.java</file>
             <file>file:/C:/Users/claud/OneDrive/Documentos/NetBeansProjects/MarvelSttratego/src/marvelsttratego/vista/Actualizable.java</file>
+            <file>file:/C:/Users/claud/OneDrive/Documentos/NetBeansProjects/MarvelSttratego/src/marvelsttratego/Main.java</file>
+            <file>file:/C:/Users/claud/OneDrive/Documentos/NetBeansProjects/MarvelSttratego/src/marvelsttratego/excepciones/UsuarioDuplicadoException.java</file>
+            <file>file:/C:/Users/claud/OneDrive/Documentos/NetBeansProjects/MarvelSttratego/src/marvelsttratego/excepciones/PasswordInvalidoException.java</file>
+            <file>file:/C:/Users/claud/OneDrive/Documentos/NetBeansProjects/MarvelSttratego/src/marvelsttratego/excepciones/MovimientoInvalidoException.java</file>
+            <file>file:/C:/Users/claud/OneDrive/Documentos/NetBeansProjects/MarvelSttratego/src/marvelsttratego/excepciones/CredencialesInvalidasException.java</file>
+            <file>file:/C:/Users/claud/OneDrive/Documentos/NetBeansProjects/MarvelSttratego/src/marvelsttratego/modelo/Agente.java</file>
+            <file>file:/C:/Users/claud/OneDrive/Documentos/NetBeansProjects/MarvelSttratego/src/marvelsttratego/modelo/PiezaMovil.java</file>
+            <file>file:/C:/Users/claud/OneDrive/Documentos/NetBeansProjects/MarvelSttratego/src/marvelsttratego/modelo/Pieza.java</file>
+            <file>file:/C:/Users/claud/OneDrive/Documentos/NetBeansProjects/MarvelSttratego/src/marvelsttratego/modelo/Scout.java</file>
         </group>
     </open-files>
 </project-private>

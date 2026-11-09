@@ -15,6 +15,8 @@ public class PanelCrear extends PanelFondo implements ActionListener {
     private final VentanaPrincipal ventana;
     private final JTextField campoUsuario = new JTextField(15);
     private final JPasswordField campoPassword = new JPasswordField(15);
+    private final char caracterOculto = campoPassword.getEchoChar();
+    private final JButton botonMostrar = new JButton("MOSTRAR");
     private final JButton botonCrear = new JButton("CREAR");
     private final JButton botonCancelar = new JButton("CANCELAR");
 
@@ -28,6 +30,8 @@ public class PanelCrear extends PanelFondo implements ActionListener {
         cristal.add(campoUsuario);
         cristal.add(new JLabel("Password (5 caracteres):"));
         cristal.add(campoPassword);
+        cristal.add(new JLabel(""));
+        cristal.add(botonMostrar);
         cristal.add(botonCrear);
         cristal.add(botonCancelar);
         agregarAbajo(cristal);
@@ -35,17 +39,33 @@ public class PanelCrear extends PanelFondo implements ActionListener {
         botonCrear.addActionListener(this);
         botonCancelar.addActionListener(this);
         campoPassword.addActionListener(this);
+        botonMostrar.addActionListener(this);
+    }
+
+    private void alternarPassword() {
+        if (campoPassword.getEchoChar() == 0) {
+            campoPassword.setEchoChar(caracterOculto);
+            botonMostrar.setText("MOSTRAR");
+        } else {
+            campoPassword.setEchoChar((char) 0);
+            botonMostrar.setText("OCULTAR");
+        }
+        campoPassword.requestFocus();
     }
 
     public void limpiar() {
         campoUsuario.setText("");
         campoPassword.setText("");
+        campoPassword.setEchoChar(caracterOculto);
+        botonMostrar.setText("MOSTRAR");
         campoUsuario.requestFocus();
     }
 
     @Override
     public void actionPerformed(ActionEvent e) {
-        if (e.getSource() == botonCancelar) {
+        if (e.getSource() == botonMostrar) {
+            alternarPassword();
+        } else if (e.getSource() == botonCancelar) {
             ventana.mostrarMensaje("");
             ventana.abrirInicio();
         } else {
