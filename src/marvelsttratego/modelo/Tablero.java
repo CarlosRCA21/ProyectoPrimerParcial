@@ -75,13 +75,13 @@ public class Tablero {
 
     private void validarDestino(Posicion destino) throws MovimientoInvalidoException {
         if (!estaEnTablero(destino)) {
-            throw new MovimientoInvalidoException("La casilla " + destino + " esta fuera del tablero.");
+            throw new MovimientoInvalidoException("La casilla " + destino + " está fuera del tablero.");
         }
         if (esZonaProhibida(destino)) {
             throw new MovimientoInvalidoException("La casilla " + destino + " es una zona prohibida.");
         }
         if (celdas[destino.getFila()][destino.getColumna()] != null) {
-            throw new MovimientoInvalidoException("La casilla " + destino + " ya esta ocupada.");
+            throw new MovimientoInvalidoException("La casilla " + destino + " ya está ocupada.");
         }
     }
 }

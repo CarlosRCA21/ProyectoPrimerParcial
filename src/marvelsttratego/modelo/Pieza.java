@@ -2,7 +2,7 @@
 package marvelsttratego.modelo;
 
 
-public abstract class Pieza {
+public abstract class Pieza implements Movible, Atacable {
     
     private final String nombre;
     private final int rango;

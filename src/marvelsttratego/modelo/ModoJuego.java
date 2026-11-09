@@ -4,7 +4,7 @@ package marvelsttratego.modelo;
 
 public enum ModoJuego {
     TUTORIAL("Tutorial", true),
-    CLASICO("Clasico", false);
+    CLASICO("Clásico", false);
     
     private final String nombre;
     private final boolean mostrarTodas;

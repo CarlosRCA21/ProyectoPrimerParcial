@@ -34,11 +34,21 @@ public class Jugador {
 
 
 
-    public String getUsername()      { return username; }
-    public int getPuntos()           { return puntos; }
-    public int getPartidasHeroes()   { return partidasHeroes; }
-    public int getPartidasVillanos() { return partidasVillanos; }
-    public int getPartidasTotales()  { return partidasHeroes + partidasVillanos; }
+    public String getUsername()      {
+        return username; 
+    }
+    public int getPuntos()           { 
+        return puntos; 
+    }
+    public int getPartidasHeroes()   { 
+        return partidasHeroes; 
+    }
+    public int getPartidasVillanos() { 
+        return partidasVillanos; 
+    }
+    public int getPartidasTotales()  { 
+        return partidasHeroes + partidasVillanos;
+    }
 
  
 

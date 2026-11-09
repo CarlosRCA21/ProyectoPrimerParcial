@@ -91,7 +91,7 @@ public class Partida {
     
     public void terminar(Bando ganador, TipoFinPartida tipo) {
         if (terminada) {
-            throw new IllegalStateException("La partida ya habia terminado.");
+            throw new IllegalStateException("La partida ya había terminado.");
         }
         this.terminada = true;
         this.bandoGanador = ganador;
@@ -107,17 +107,23 @@ public class Partida {
     }
 
     public Jugador getGanador() {
-        return terminada ? getJugador(bandoGanador) : null;
+        if (terminada) {
+            return getJugador(bandoGanador);
+        }
+        return null;
     }
 
     public Jugador getPerdedor() {
-        return terminada ? getJugador(bandoGanador.getOpuesto()) : null;
+        if (terminada) {
+            return getJugador(bandoGanador.getOpuesto());
+        }
+        return null;
     }
 
     
     public RegistroPartida generarRegistro() {
         if (!terminada) {
-            throw new IllegalStateException("La partida aun no ha terminado.");
+            throw new IllegalStateException("La partida aún no ha terminado.");
         }
         return new RegistroPartida(getGanador().getUsername(), getPerdedor().getUsername(),
                 bandoGanador, tipoFin, fechaFin);

@@ -56,7 +56,10 @@ public class RegistroPartida {
 
         switch (tipoFin) {
             case TIERRA_CAPTURADA:
-                String accion = (bandoGanador == Bando.HEROES) ? "SALVADO" : "CAPTURADO";
+                String accion = "CAPTURADO";
+                if (bandoGanador == Bando.HEROES) {
+                    accion = "SALVADO";
+                }
                 return ganador + " ha " + accion + " la TIERRA! Venciendo a "
                         + usernamePerdedor + " — " + fechaTexto;
             case SIN_MOVIMIENTOS:

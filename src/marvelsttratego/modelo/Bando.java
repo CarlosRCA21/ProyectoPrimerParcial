@@ -3,7 +3,7 @@ package marvelsttratego.modelo;
 
 
 public enum Bando {
-    HEROES("Heroes"),
+    HEROES("Héroes"),
     VILLANOS("Villanos");
     
     private final String nombre;

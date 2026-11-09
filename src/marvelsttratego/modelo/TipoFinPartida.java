@@ -4,7 +4,7 @@ package marvelsttratego.modelo;
 
 public enum TipoFinPartida {
     TIERRA_CAPTURADA("Captura de la tierra"),
-    SIN_MOVIMIENTOS("Sin movimientos balidos"),
+    SIN_MOVIMIENTOS("Sin movimientos válidos"),
     RETIRO("Se retiro del juego");
     
     private final String descripcion;

@@ -19,7 +19,7 @@ public enum TipoPieza {
         return puedeMoverse;
     }
     public boolean puedeAtacar(){
-        return puedeMoverse;
+        return puedeAtacar;
     }
     
     
